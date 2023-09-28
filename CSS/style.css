@@ -38,6 +38,13 @@ main {
     justify-content:  center;
     align-items:  center;
 }
+.content-tittle h1 {
+    font-family: sans-serif;
+}
+.content-tittle span {
+    color: rgba(159, 182, 190, 0.858);
+    font-family: sans-serif;
+}
 .content {
     display: flex;
     padding: 40px 0px;
@@ -46,6 +53,20 @@ main {
 .content-left {
     box-sizing: border-box;
     width: 50%;
+    padding-right: 30px;
+    border-bottom: 1px solid lightgray;
+}
+.circle-left {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: rgba(172, 199, 207, 0.403);
+    border-radius: 50%;
+    width: 1.2em;
+    color: rgb(79, 124, 138);
+    font-weight: bold;
+    margin-top: 70px;
 }
 .content-image {
     box-sizing: border-box;
@@ -62,25 +83,55 @@ main {
     display: block;
 }
 .content-image span {
-    color: gray;
+    color: rgba(159, 182, 190, 0.858);
+    font-style: italic;
 
 }
 .content-right {
     box-sizing: border-box;
     width: 50%;
+    padding-left: 30px;
 }
 .content-form {
     display: flex;
     flex-direction: column; 
     padding: 20px;
-    background: lightgray;
+    background: #d8e1e4d9;
+    font-style: bold;
+    color: rgb(49, 54, 57);
+    font-size: 13px;
+    border-radius: 5%;
+}
+.content-form h1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    color: rgb(49, 54, 57);
+}
+.content-form p {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    color: rgb(60, 79, 91);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(60, 79, 91);
 }
 input {
     margin-bottom: 10px;
     padding: 8px 2px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 select {
     padding: 8px 2px;
+}
+a {
+    margin-bottom: 20px;
+    color: rgb(60, 79, 91);
+    font-style: bold;
 }
 .content-image {
     display: flex;
@@ -108,10 +159,15 @@ select {
     flex-direction: row;
     align-items: center;
     margin-bottom: 20px;
+    justify-content: space-between;
  
 }
 .callus-left {
-    line-height: 3;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    
+    
 }
 .circle {
     padding: 10px;
@@ -122,16 +178,20 @@ select {
     width: 1.2em;
     color: rgb(79, 124, 138);
     font-weight: bold;
-    
+}
+.right {
+
 }
 .callus-right {    
+    box-sizing: border-box;
     color: rgb(79, 124, 138);
-    padding: 30px;
-    line-height: 3;
+    padding: 0px 200px 0px 30px;
+    line-height: 20px;
+    
 }
 .error-massage {
     color: red;
-    font-size: 0.8em;
+    font-size: 0.9em;
     margin-top: 0px;
 }
 
@@ -147,6 +207,16 @@ select {
     }
     .content-right {
         width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 1024px) {
+    .content-left {
+        width: 50%;
+    }
+    .content-right {
+        width: 50%;
     }
     
 }
