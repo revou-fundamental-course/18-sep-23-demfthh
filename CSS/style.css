@@ -179,16 +179,8 @@ a {
     color: rgb(79, 124, 138);
     font-weight: bold;
 }
-.right {
 
-}
-.callus-right {    
-    box-sizing: border-box;
-    color: rgb(79, 124, 138);
-    padding: 0px 200px 0px 30px;
-    line-height: 20px;
-    
-}
+
 .error-massage {
     color: red;
     font-size: 0.9em;
